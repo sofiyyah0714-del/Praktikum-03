@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keindahan Nusantara</title>  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background-color:#FAF1E8;
+    }
+
+    body {
+      padding: 10px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      gap: 10px;
+    }
+
+    header {
+      background-color:#9E493B;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      border: 1px solid;
+      width: 100%;
+    }
+
+    header img {
+      width: 70px;
+      max-width: 25%;
+      height: auto;
+    }
+
+    header p {
+      color:white;
+      font-size: 22px;
+      overflow-wrap: break-word;
+    }
+
+    nav {
+      background-color: #E9B59D;
+      padding: 15px 8px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid #e0e0e0;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      min-width: 0;
+    }
+
+    article {
+      width: 100%;
+      min-width: 0;
+      background-color: #fffcf7;
+      padding: 15px;
+      border: 1px solid #ffd54f;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    article h2 {
+      font-size: 23px;
+      overflow-wrap: break-word;
+    }
+
+    article p,
+    section {
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-wrap: break-word;
+    }
+
+    section {
+      background-color: #f3d6c5;
+      padding: 15px;
+      border: 1px solid #gold;
+      width: 100%;
+      min-width: 0;
+    }
+
+    aside {
+      width: 100%;
+      min-width: 0;
+      background-color: #d98b73;
+      padding: 15px;
+      border: 1px solid;gold
+      color:white;
+    }
+
+    footer {
+      background-color: #9e493b;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      border: 1px solid #gold;
+      width: 100%;
+      color:white;
+    }
+
+  
+    @media (min-width: 768px) {
+      .main-content {
+        flex-direction: row;
+        align-items: stretch;
+      }
+
+      article {
+        flex: 3;
+      }
+
+      aside {
+        flex: 1;
+      }
+
+      header img {
+        width: 100px;
+      }
+    }
+  </style>
+  </head>
+  <body>  
+  <div class="wrapper">
+    <header>
+      <img src="/Praktikum03/Layout/Logo Nusantara.jpeg" alt="Logo Nusantara">
+      <p>Keindahan Nusantara</p>
+      </header>
+
+<nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#makanan">Makanan</a>
+  <a href="#alam">Alam</a>
+  <a href="#budaya">Budaya</a>
+</nav>
+
+<div class="main-content">
+
+  <article id="beranda">
+    <h2>Keindahan Nusantara</h2>
+
+    <p>
+      Indonesia merupakan negara yang kaya akan keindahan alam,
+      makanan khas, dan keberagaman budaya. Setiap daerah memiliki
+      keunikan yang menjadi kebanggaan bangsa Indonesia.
+    </p>
+
+    <section id="alam">
+      <h3>Keindahan Alam</h3>
+      Indonesia memiliki pemandangan alam yang menakjubkan,
+      mulai dari pegunungan, pantai, hingga danau. Keindahan alam
+      ini menjadi daya tarik wisata dan harus dijaga kelestariannya.
+    </section>
+
+    <section id="makanan">
+      <h3>Makanan Khas</h3>
+      Makanan khas Indonesia terkenal dengan cita rasanya yang lezat
+      dan kaya akan rempah-rempah. Berbagai bumbu tradisional,
+      seperti kunyit, jahe, lengkuas, dan serai, memberikan aroma
+      serta cita rasa yang khas pada setiap hidangan. Rendang,
+      nasi goreng, dan sate merupakan beberapa contoh kuliner
+      Nusantara yang digemari banyak orang.
+    </section>
+
+    <section id="budaya">
+      <h3>Budaya Nusantara</h3>
+      Indonesia memiliki beragam budaya, seperti batik, tari
+      tradisional, rumah adat, dan musik daerah. Keberagaman tersebut
+      merupakan warisan bangsa yang perlu dilestarikan oleh generasi muda.
+    </section>
+  </article>
+
+  <aside>
+    <center>
+    <h3>Alam</h3>
+    <img src="/Praktikum03/Layout/Alam.jpeg"alt="Alam" width="200">
+     <br></br>
+     <h3>Makanan</h3>
+    <img src="/Praktikum03/Layout/rendang.jpeg"alt="Makanan" width="200">
+    <br></br>
+     <h3>Budaya</h3>
+    <img src="/Praktikum03/Layout/tari.jpeg"alt="tari" width="200">
+    </center>
+  </aside>
+
+</div>
+
+<footer>
+  &copy 2026 Praktikum web dengan HTML5
+</footer>
+
+  </div>
+  </body>
+</html>
